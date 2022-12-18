@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbarDu {
+    height: 5.6rem;
+    background-color: #975C3E;
+    max-width: auto;
+    border-radius: 0 0 .9rem .9rem;
+    position: relative;
+}
+
+.lineaNav {
+    position: absolute;
+    top: 25%;
+    z-index: 10;
+    background-color: #FAEBDA;
+    margin-right: 1.3%;
+    width: 100%;
+    height: .2rem;
+}
+
+.logoNavbar {
+    position: relative;
+    top: 2rem;
+    z-index: 99;
+}
+
+.linkNav {
+    color: #fff;
+    font-size: 1.5rem;
+    margin: 4rem;
+    margin-top: 5rem;
+    text-decoration: none;
+    font-weight: 700;
+}
+
+.linkNav:hover { 
+    color: #FAA618;
+}
+
+.titMobile {
+    display: none;
+}
+/* -----Media Query----- */
+
+@media (min-width: 576px) and (max-width: 1920px) {
+    .logoMobile {
+        display: none;
+    }
+    
+}
+
+@media (min-width: 280px) and (max-width: 330px) {
+    .titMobile {
+        display: block;
+        color: red;
+        white-space: normal;
+        text-indent: size;
+        font-size: 1.5rem;
+        font-family: 'Dancing Script';
+        margin-bottom: 0;
+        margin-right: 0;
+    }
+}
+
+@media (max-width: 575px) {
+
+    .lineaNav {
+        display: none;
+    }
+
+    .containerLogoMobile {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    
+    .logoNavbar {
+        display: none;
+    }
+
+    .linkNav {
+        color: #fff;
+        font-size: 1.3rem;
+        padding: .5rem;
+        margin: 0;
+        text-decoration: none;
+        font-weight: 600;
+    }
+
+    .navbarDu {
+        height: 100%;
+    }
+
+    .logoMobile {
+        width: 5rem;
+
+    }
+
+    .titMobile {
+        display: block;
+        color: #fff;
+        font-family: 'Dancing Script';
+        margin-bottom: 0;
+        margin-right: 6%;
+        white-space: normal;
+        font-size: 1.5rem;
+    }
+
+}
